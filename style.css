@@ -13,6 +13,7 @@ html {
   --bg-primary: #8bd42b;
   --bg-orange: #eb6b01;
   --text-white: #ffffff;
+  --row-gutter:10px;
 }
 
 .container {
@@ -22,12 +23,14 @@ html {
 .product__list {
   display: flex;
   flex-wrap: wrap;
+  margin-left:  calc(-1 * var(--row-gutter));
+  margin-right: calc(-1 * var(--row-gutter));
 }
 
 .product__wrap {
   flex: 0 0 auto;
   width: 25%;
-  padding:10px;
+  padding:var(--row-gutter);
 }
 
 .product__item {
